@@ -1,8 +1,11 @@
 import unittest
 
-from nose2.tools import such
+from primes.prime_factors import Primes 
+import nose.tools as nt
 
-class PrimeFactorsTest(unittest.TestCase):
+class PrimeTests(unittest.TestCase):
+	def setUp(self):
+		self.primes = Primes()
 
-	def test_primes_of_0_are_empty_list(self):
-		it.assertEqual(False, True)
+	def test_primes_of_0_is_an_empty_list(self):
+		nt.assert_equal(True, False)
