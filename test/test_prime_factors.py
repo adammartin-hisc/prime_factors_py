@@ -24,3 +24,6 @@ class PrimeTests(unittest.TestCase):
 
 	def test_primes_of_6_is_2_and_3(self):
 		nt.assert_equal(self.primes.factors(6), [2,3])
+
+	def test_primes_of_8_is_2_2_and_2(self):
+		nt.assert_equal(self.primes.factors(8), [2,2,2])
