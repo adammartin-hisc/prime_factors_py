@@ -8,4 +8,4 @@ class PrimeTests(unittest.TestCase):
 		self.primes = Primes()
 
 	def test_primes_of_0_is_an_empty_list(self):
-		nt.assert_equal(True, False)
+		nt.assert_equal(self.primes.factors(0), [])
