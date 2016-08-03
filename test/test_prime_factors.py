@@ -9,3 +9,6 @@ class PrimeTests(unittest.TestCase):
 
 	def test_primes_of_0_is_an_empty_list(self):
 		nt.assert_equal(self.primes.factors(0), [])
+
+	def test_primes_of_1_is_an_empty_list(self):
+		nt.assert_equal(self.primes.factors(1), [])
