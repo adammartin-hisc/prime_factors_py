@@ -8,6 +8,4 @@ class Primes(object):
 				primes.append(candidate)
 				number /= candidate
 			candidate += 1
-		if number > 1:
-			primes.append(number)
 		return primes
