@@ -15,3 +15,6 @@ class PrimeTests(unittest.TestCase):
 
 	def test_primes_of_2_is_2(self):
 		nt.assert_equal(self.primes.factors(2), [2])
+
+	def test_primes_of_3_is_3(self):
+		nt.assert_equal(self.primes.factors(3), [3])
