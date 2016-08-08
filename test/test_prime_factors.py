@@ -14,23 +14,17 @@ class PrimeTests(unittest.TestCase):
 		self.assertEqual([2],self.primes.factors(2))
 
 	def test_primes_of_3_returns_3(self):
-		self.assertEqual([3],self.primes.factors(3))
+		self.assertEqual([3], self.primes.factors(3, answer=[]))
 
 	def test_primes_of_4_returns_2_2(self):
-		self.assertEqual([2,2],self.primes.factors(4))
+		self.assertEqual([2,2],self.primes.factors(4, answer=[]))
 
 	def test_primes_of_6_returns_2_3(self):
-		self.assertEqual([2,3],self.primes.factors(6))
+		self.assertEqual([2,3],self.primes.factors(6, answer=[]))
 
 	def test_primes_of_8_returns_2_2_2(self):
-		self.assertEqual([2,2,2], self.primes.factors(8))
+		self.assertEqual([2,2,2], self.primes.factors(8, answer=[]))
 
 	def test_primes_of_9_returns_3_3(self):
-		self.assertEqual([3,3], self.primes.factors(9))
+		self.assertEqual([3,3], self.primes.factors(9, answer=[]))
 
-class FlattenTest(unittest.TestCase):
-	def test_flatten_for_doublenest_flattens(self):
-		self.assertEqual([2], Primes().flatten([[2]]) )
-
-	def test_flatten_for_random_nesting(self):
-		self.assertEqual([2,2], Primes().flatten([2,[2]]))
